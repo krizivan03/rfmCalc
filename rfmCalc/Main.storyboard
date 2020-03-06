@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zNk-8w-fHD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0G-BG-EPa">
+                                <rect key="frame" x="84" y="130" width="96" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="fbG-dX-DGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF5-cQ-XvH">
+                                <rect key="frame" x="84" y="188" width="96" height="50"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwM-ET-sOs">
+                                <rect key="frame" x="84" y="246" width="96" height="50"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RFM: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-9y-zkD">
+                                <rect key="frame" x="84" y="366" width="96" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eNs-ok-p9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-AL-nWb">
+                                <rect key="frame" x="188" y="366" width="144" height="50"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hED-ds-22o">
+                                <rect key="frame" x="83" y="580" width="248" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dnp-7R-KLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <state key="normal" title="Calculate RFM"/>
+                                <connections>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kR-Tf-DSf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in inches" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vSi-NC-kum">
+                                <rect key="frame" x="189" y="138" width="143" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in inches" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NZc-lG-r2o">
+                                <rect key="frame" x="188" y="196" width="144" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="&quot;m&quot; or &quot;f&quot;" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-ij-yWp">
+                                <rect key="frame" x="189" y="254" width="143" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-B2-Atz">
+                                <rect key="frame" x="20" y="424" width="374" height="148"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="BhP-1V-das"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RFM Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awk-LM-gcz">
+                                <rect key="frame" x="83" y="88" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KsK-gC-ano"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vSi-NC-kum" firstAttribute="top" secondItem="awk-LM-gcz" secondAttribute="bottom" constant="20" id="0sV-lG-Miz"/>
+                            <constraint firstItem="uF5-cQ-XvH" firstAttribute="top" secondItem="q0G-BG-EPa" secondAttribute="bottom" constant="8" id="126-ut-xF8"/>
+                            <constraint firstItem="GIn-ij-yWp" firstAttribute="top" secondItem="NZc-lG-r2o" secondAttribute="bottom" constant="24" id="216-Bh-mSF"/>
+                            <constraint firstItem="iwM-ET-sOs" firstAttribute="leading" secondItem="G6h-9y-zkD" secondAttribute="leading" id="4JO-h2-szF"/>
+                            <constraint firstItem="GIn-ij-yWp" firstAttribute="trailing" secondItem="SmH-AL-nWb" secondAttribute="trailing" id="5Kw-n0-myN"/>
+                            <constraint firstItem="bpq-B2-Atz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7RN-3a-A5v"/>
+                            <constraint firstItem="uF5-cQ-XvH" firstAttribute="centerY" secondItem="NZc-lG-r2o" secondAttribute="centerY" id="7dA-9D-y3Q"/>
+                            <constraint firstItem="q0G-BG-EPa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="A05-x5-A9z"/>
+                            <constraint firstItem="NZc-lG-r2o" firstAttribute="leading" secondItem="SmH-AL-nWb" secondAttribute="leading" id="CLF-Tz-g3d"/>
+                            <constraint firstItem="bpq-B2-Atz" firstAttribute="centerX" secondItem="hED-ds-22o" secondAttribute="centerX" id="DdE-5P-XJr"/>
+                            <constraint firstItem="vSi-NC-kum" firstAttribute="leading" secondItem="GIn-ij-yWp" secondAttribute="leading" id="Duh-2Q-6rJ"/>
+                            <constraint firstItem="q0G-BG-EPa" firstAttribute="leading" secondItem="uF5-cQ-XvH" secondAttribute="leading" id="EHP-xd-WKT"/>
+                            <constraint firstItem="vSi-NC-kum" firstAttribute="trailing" secondItem="NZc-lG-r2o" secondAttribute="trailing" id="J9f-kU-ez3"/>
+                            <constraint firstItem="hED-ds-22o" firstAttribute="top" secondItem="bpq-B2-Atz" secondAttribute="bottom" constant="8" id="PMM-m7-1CZ"/>
+                            <constraint firstItem="q0G-BG-EPa" firstAttribute="trailing" secondItem="uF5-cQ-XvH" secondAttribute="trailing" id="TAi-Cb-WqR"/>
+                            <constraint firstItem="uF5-cQ-XvH" firstAttribute="trailing" secondItem="iwM-ET-sOs" secondAttribute="trailing" id="U7I-LY-HIx"/>
+                            <constraint firstItem="G6h-9y-zkD" firstAttribute="top" secondItem="iwM-ET-sOs" secondAttribute="bottom" constant="70" id="UIf-Bp-S5L"/>
+                            <constraint firstItem="G6h-9y-zkD" firstAttribute="firstBaseline" secondItem="SmH-AL-nWb" secondAttribute="firstBaseline" id="UP1-6I-tkz"/>
+                            <constraint firstItem="vSi-NC-kum" firstAttribute="centerX" secondItem="NZc-lG-r2o" secondAttribute="centerX" id="VC2-1l-VIS"/>
+                            <constraint firstItem="bpq-B2-Atz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="X9i-4z-OL9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vSi-NC-kum" secondAttribute="trailing" constant="82" id="YHz-VP-qyV"/>
+                            <constraint firstItem="iwM-ET-sOs" firstAttribute="centerY" secondItem="GIn-ij-yWp" secondAttribute="centerY" id="bEE-Gr-QKi"/>
+                            <constraint firstItem="uF5-cQ-XvH" firstAttribute="leading" secondItem="iwM-ET-sOs" secondAttribute="leading" id="c52-dr-dgb"/>
+                            <constraint firstItem="iwM-ET-sOs" firstAttribute="trailing" secondItem="G6h-9y-zkD" secondAttribute="trailing" id="d5z-JU-v4q"/>
+                            <constraint firstItem="iwM-ET-sOs" firstAttribute="top" secondItem="uF5-cQ-XvH" secondAttribute="bottom" constant="8" id="dmu-bo-KI1"/>
+                            <constraint firstItem="q0G-BG-EPa" firstAttribute="top" secondItem="awk-LM-gcz" secondAttribute="bottom" constant="12" id="eir-54-5VK"/>
+                            <constraint firstItem="NZc-lG-r2o" firstAttribute="leading" secondItem="uF5-cQ-XvH" secondAttribute="trailing" constant="8" id="foo-7C-4Ig"/>
+                            <constraint firstItem="awk-LM-gcz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="l0W-af-eOp"/>
+                            <constraint firstItem="NZc-lG-r2o" firstAttribute="trailing" secondItem="GIn-ij-yWp" secondAttribute="trailing" id="mlY-1A-EWM"/>
+                            <constraint firstItem="awk-LM-gcz" firstAttribute="trailing" secondItem="hED-ds-22o" secondAttribute="trailing" id="qNH-iO-Vas"/>
+                            <constraint firstItem="bpq-B2-Atz" firstAttribute="top" secondItem="G6h-9y-zkD" secondAttribute="bottom" constant="8" id="rem-C7-3Kk"/>
+                            <constraint firstItem="NZc-lG-r2o" firstAttribute="top" secondItem="vSi-NC-kum" secondAttribute="bottom" constant="24" id="rmn-uQ-fjd"/>
+                            <constraint firstItem="q0G-BG-EPa" firstAttribute="centerY" secondItem="vSi-NC-kum" secondAttribute="centerY" id="uDt-GL-2WZ"/>
+                            <constraint firstItem="awk-LM-gcz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wY5-MC-1mo"/>
+                            <constraint firstItem="awk-LM-gcz" firstAttribute="leading" secondItem="hED-ds-22o" secondAttribute="leading" id="xHt-ty-D2O"/>
+                            <constraint firstItem="G6h-9y-zkD" firstAttribute="baseline" secondItem="SmH-AL-nWb" secondAttribute="baseline" id="yuZ-kv-J0I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f2z-vO-6NU"/>
+                    <connections>
+                        <outlet property="genderInput" destination="GIn-ij-yWp" id="NAl-ET-nTX"/>
+                        <outlet property="heightInput" destination="vSi-NC-kum" id="jOB-LG-DQu"/>
+                        <outlet property="rfmDiagnosis" destination="bpq-B2-Atz" id="1N3-Lz-HEG"/>
+                        <outlet property="rfmResult" destination="SmH-AL-nWb" id="3KI-Aj-QwC"/>
+                        <outlet property="waistInput" destination="NZc-lG-r2o" id="wZL-Vd-NQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2cU-yE-UUZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zNk-8w-fHD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aza-o1-8mK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YHz-fm-IB3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afl-IR-VWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>
