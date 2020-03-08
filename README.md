@@ -1,5 +1,5 @@
 # rfmCalculator
-This is a simple IOS App that Calculates your Relative Fat Mass
+This is an IOS App that Calculates your Relative Fat Mass
 
 
 ![](rfmAppImages/Start_Page.png)
